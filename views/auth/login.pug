@@ -1,0 +1,25 @@
+extends ../layout/index.pug
+
+block contenido 
+    .py-10 
+        h1.text-4xl.my-10.font-extrabold.text-center Bienes 
+            span.font-normal Raíces  
+        h2.text-center.text-2xl.font-extrabold= pagina 
+
+        .mt-8.mx-auto.max-w-md
+            .bg-white.py-8.px-4.shadow
+                form
+                    div.space-y-5 
+                        div 
+                            label.block.text-sm.uppercase.text-gray-500.mb-3.font-bold(for="email") Email de Registro
+                            input#nombre.w-full.px-3.py-2.border.border-gray-300.rounded-md.placeholder-gray-400(placeholder="Tu Email" type="email" name="email")
+                        div 
+                            label.block.text-sm.uppercase.text-gray-500.mb-3.font-bold(for="email") Contraseña 
+                            input#nombre.w-full.px-3.py-2.border.border-gray-300.rounded-md.placeholder-gray-400(placeholder="Tu Contraseña" type="password" name="password")
+                        
+                        .flex.items-center.text-4px 
+                            .flex.justify-center.space-x-4
+                                a.text-gray-500.text-xs(href="/auth/userRegistration") ¿No tienes Cuenta? Crea Una 
+                                a.text-gray-500.text-xs(href="/auth/forgottenPassword") Olvidé mi Contraseña
+
+                        input(class="w-full bg-naranja hover:bg-verde text-white font-bold py-3 cursor-pointer" type="submit" value="Iniciar Seción")

@@ -1,0 +1,40 @@
+{
+  "name": "bienesraices_daniel",
+  "version": "1.0.0",
+  "description": "Mi primer proyecto de Node.js",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "server": "nodemon index.js",
+    "css": "postcss public/css/tailwind.css -o public/css/app.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theIcedBlackTea/BIENESRAICES_Daniel.git"
+  },
+  "keywords": [
+    "MVC",
+    "Pug",
+    "Tailwind",
+    "MySQL",
+    "Sequelize"
+  ],
+  "author": "Daniel de Jesus Bravo Godinez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/theIcedBlackTea/BIENESRAICES_Daniel/issues"
+  },
+  "homepage": "https://github.com/theIcedBlackTea/BIENESRAICES_Daniel#readme",
+  "dependencies": {
+    "express": "^4.21.0",
+    "pug": "^3.0.3"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "nodemon": "^3.1.7",
+    "postcss": "^8.4.47",
+    "postcss-cli": "^11.0.0",
+    "tailwindcss": "^3.4.14"
+  }
+}
